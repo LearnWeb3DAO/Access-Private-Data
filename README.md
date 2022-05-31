@@ -12,7 +12,7 @@ Lets go 🚀
 
 ## What does `private` mean?
 
-Function (and variable) visibility modifiers only affect the visisbility of the function - and do not prevent access to their values. We know that `public` functions are those which can be called both externally by users and smart contracts, and also by the smart contract itself.
+Function (and variable) visibility modifiers only affect the visibility of the function - and do not prevent access to their values. We know that `public` functions are those which can be called both externally by users and smart contracts, and also by the smart contract itself.
 
 Similarly, `internal` functions are those which can only be called by the smart contract itself, and outside users and smart contracts cannot call those functions. `external` functions are the opposite, where they can only be called by external users and smart contracts, but not the smart contract that has the function itself.
 
