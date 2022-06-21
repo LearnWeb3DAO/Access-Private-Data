@@ -34,6 +34,8 @@ However, if `Contract A` has a function `g()` which is marked `private`, `Contra
 
 The same is true for variables, as variables are basically just functions. `private` variables can only be accessed and modified by the smart contract itself, not even derived contracts. However, this does not mean that external parties cannot read the value.
 
+<Quiz questionId="d3d1b7dc-7129-4155-93a1-51a29342eead" />
+
 ## BUIDL
 
 We will build a simple contract, along with a Hardhat Test, to demonstrate this. Our contract will attempt to store data in `private` variables hoping that nobody will be able to read it's value.
@@ -103,6 +105,8 @@ contract Login {
 
 Since both declared variables are `bytes32` variables, we know that each variable takes up exactly one storage slot. Since the order matters, we know that `username` will take up `Slot 0` and `password` will take up `Slot 1`.
 
+<Quiz questionId="cb47ac8b-33e3-4efa-9819-8639e88484b2" />
+
 Therefore, instead of attempting to read these variable values by calling the contract, which is not possible, we can just access the storage slots directly. Since Ethereum is a public blockchain, all nodes have access to all the state.
 
 Let's write a Hardhat Test to demonstrate this functionality.
@@ -166,3 +170,7 @@ The tests should pass. Wow, we could actually read the password!
 ## Prevention
 
 NEVER store private information on a public blockchain. No other way around it.
+
+<Quiz questionId="3dbb32ec-4b6e-4bc6-9f3d-91aa3132664a" />
+
+<SubmitQuiz />
