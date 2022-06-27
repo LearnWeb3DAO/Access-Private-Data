@@ -12,7 +12,7 @@ Lets go 🚀
 
 ## What does `private` mean?
 
-Function (and variable) visibility modifiers only affect the visisbility of the function - and do not prevent access to their values. We know that `public` functions are those which can be called both externally by users and smart contracts, and also by the smart contract itself.
+Function (and variable) visibility modifiers only affect the visibility of the function - and do not prevent access to their values. We know that `public` functions are those which can be called both externally by users and smart contracts, and also by the smart contract itself.
 
 Similarly, `internal` functions are those which can only be called by the smart contract itself, and outside users and smart contracts cannot call those functions. `external` functions are the opposite, where they can only be called by external users and smart contracts, but not the smart contract that has the function itself.
 
@@ -48,7 +48,7 @@ User will somehow be able to access those private variables.
 
 To understand how this works, recall from the Ethereum Storage and Execution level that variables in Solidity are stored in 32 byte (256 bit) storage slots, and that data is stored sequentially in these storage slots based on the order in which these variables are declared.
 
-Storage is also optimized such that if bunch of variables can fit in one slot, they are put in the same slot. This is called variable packing, and we will learn more about this later.
+Storage is also optimized such that if a bunch of variables can fit in one slot, they are put in the same slot. This is called variable packing, and we will learn more about this later.
 
 ---
 
