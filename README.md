@@ -50,6 +50,10 @@ To understand how this works, recall from the Ethereum Storage and Execution lev
 
 Storage is also optimized such that if a bunch of variables can fit in one slot, they are put in the same slot. This is called variable packing, and we will learn more about this later.
 
+> Note
+ All of these commands should work smoothly . 
+ If you are on windows and face Errors Like `Cannot read properties of null (reading 'pickAlgorithm')`
+ Try Clearing the NPM cache using `npm cache clear --force`.
 ---
 
 - To set up a Hardhat project, Open up a terminal and execute these commands
@@ -65,10 +69,6 @@ Storage is also optimized such that if a bunch of variables can fit in one slot,
   npm install --save-dev @nomicfoundation/hardhat-toolbox @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
   ```
   
-  ```bash
-  npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
-  ```
-
 - In the same directory where you installed Hardhat run:
 
   ```bash
