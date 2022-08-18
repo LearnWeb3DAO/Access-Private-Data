@@ -52,15 +52,19 @@ Storage is also optimized such that if a bunch of variables can fit in one slot,
 
 ---
 
-- To setup a Hardhat project, Open up a terminal and execute these commands in a new folder
+- To set up a Hardhat project, Open up a terminal and execute these commands
 
   ```bash
   npm init --yes
   npm install --save-dev hardhat
   ```
+  
+- If you are on a Windows machine, please do this extra step and install these libraries as well :)
 
-- If you are on Windows, please do this extra step and install these libraries as well :)
-
+  ```bash
+  npm install --save-dev @nomicfoundation/hardhat-toolbox @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+  ```
+  
   ```bash
   npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
   ```
